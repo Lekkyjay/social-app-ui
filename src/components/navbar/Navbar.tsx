@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { IoAppsOutline, IoHomeOutline, IoMailOutline, IoMoonOutline, IoPersonOutline, IoSunnyOutline } from 'react-icons/io5'
-import profileImg from '../../assets/1.png'
 import { FaRegBell, FaSearch } from 'react-icons/fa'
 import { DarkModeContext } from '../../context/DarkModeContext'
+import { AuthContext } from '../../context/AuthContext'
 import './navbar.scss'
 
 export default function Navbar() {
   const { darkMode, toggle } = useContext(DarkModeContext)  
+  const { currentUser } = useContext(AuthContext)
 
   return (
     <div className="theme-light navbar">
@@ -31,7 +32,7 @@ export default function Navbar() {
         <IoMailOutline />
         <FaRegBell />
         <div className="user">
-          <img src={profileImg} alt="" />
+          <img src={currentUser.profilePic} alt="" />
           <span>Lekky</span>
         </div>
       </div>     
