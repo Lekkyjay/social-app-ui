@@ -9,7 +9,7 @@ export default function Navbar() {
   const darkMode = true
 
   return (
-    <div className="navbar">
+    <div className="theme-light navbar">
       <div className="left">
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>CheezMedia</span>

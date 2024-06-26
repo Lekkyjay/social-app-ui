@@ -6,7 +6,7 @@ import './layout.scss'
 
 export default function Layout() {
   return (
-    <div>
+    <div className='theme-dark'>
       <Navbar />
       <div style={{ display: "flex" }}>
         <LeftBar />
