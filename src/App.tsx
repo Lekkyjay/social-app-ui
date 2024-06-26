@@ -4,13 +4,18 @@ import Register from './pages/register/Register'
 import Home from './pages/home/Home'
 import Layout from './components/layout/Layout'
 import Profile from './pages/profile/Profile'
+import Protected from './components/Protected'
 
 function App() {
   
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />,
+      element: (
+        <Protected>
+          <Layout />
+        </Protected>
+      ),
       children: [
         {
           path: "/",
