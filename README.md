@@ -1,5 +1,10 @@
 # React + TypeScript + Vite
 
+### Description
+Social App UI with React, TypeScript and Vite.
+Tech: Context-API, React-Router-Dom and SASS.
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
